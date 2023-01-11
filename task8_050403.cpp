@@ -13,6 +13,7 @@ int main()
         return 0;
     }
     
-    if((bits & mask) == 1) cout << "The packet was last: " << (bits & mask) << endl;
+    if(bits & mask) cout << "The packet was last: " << (bits & mask) << endl;
     else cout << "The packet was not last: " << (bits & mask) << endl;
+    return 0;
 }
