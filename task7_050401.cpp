@@ -4,7 +4,8 @@ using namespace std;
 int main()
 {
     int address;
-    cout << "Enter address: ";
+    const int mask = 128;
+    cout << "Введіть октет адреси за протоколом ІР версії 4: ";
     cin >> address;
 
     if(address < 0 || address > 255)
@@ -12,10 +13,8 @@ int main()
         cout << "Invalid address";
         return 0;
     }
-    const int mask = 128;
-
-    if(address & mask) cout << "You entered: " << (address & mask);
-    else cout << "You don't have rights: "<< (address & mask);
     
+    cout << "В нашій мережі застосована маска " << mask << endl;
+    cout << "Октет адреси підмережі: " << (address & mask);
     return 0;
 }
