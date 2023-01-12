@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    const int mask = 100;
+    const int mask = 4;
     int rights;
     cout << "Enter rights: ";
     cin >> rights;
