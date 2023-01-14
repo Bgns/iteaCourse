@@ -24,7 +24,7 @@ int main()
       ans = 1 / temp;
       i--;
     }
-    cout << "Обчисленя: " << ans << endl;
+    cout << "Обчислення: " << ans << endl;
   }
   return 0;
 }
