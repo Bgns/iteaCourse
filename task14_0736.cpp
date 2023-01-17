@@ -10,12 +10,15 @@ int main()
   cout << "Введіть n днів для черепахи: ";
   cin >> n;
 
-  if(n < 2) cout << "Помилка. N повинен бути більше 2"
-
-  for(int i = 1; i <= n; i++) {
-    turtleLength += 0.2;
-    entireDistance += turtleLength; 
+  if(n < 2) cout << "Помилка. N повинен бути більше 2";
+  else
+  {
+    for(int i = 1; i <= n; i++) {
+      turtleLength += 0.2;
+      entireDistance += turtleLength; 
+    }
+    cout << "Загальна відстань: " << entireDistance << endl;
   }
-  cout << "Загальна відстань: " << entireDistance << endl;
+  
   return 0;
 }
