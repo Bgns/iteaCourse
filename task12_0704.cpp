@@ -8,11 +8,15 @@ using namespace std;
 int main()
 {
   int number, temp = 0;
-  cout << "Введіть: ";
+  cout << "Введіть число: ";
   cin >> number;
 
-  if (number == 0 || number < 0)
-    cout << "Введіть число більше нуля ";
+  if (number == 0 || number < 0) {
+    cout << "Помилка, число має бути більше нуля ";
+    return 0;
+  }
+  
+  cout << "Число навпаки: ";
   while(number > 0)
   {
     temp = number%10;  
